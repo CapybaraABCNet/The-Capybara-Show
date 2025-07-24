@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Capybara Show WEB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffdd57; /* Цвет при наведении */
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #0051ff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .m {
+    color:#000000;
+    border-radius: 15px; /* Сглаженные углы */
+    padding: 20px;
+    text-align: center; /* Центрирование текста */
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: appear 2s forwards;
+    margin-bottom: 20px; /* Отступ снизу */
+    
+}
+.w {
+    color:rgb(255, 255, 255);
+    border-radius: 15px; /* Сглаженные углы */
+    padding: 20px;
+    text-align: center; /* Центрирование текста */
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: appear 2s forwards;
+    margin-bottom: 20px; /* Отступ снизу */
+}
+@keyframes appear {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        img {
+            width: 500px; /* Ширина изображения */
+            border-radius: 15px; /* Сглаженные углы для изображения */
+            opacity: 0;
+            animation: imageFadeIn 2s forwards;
+            display: block; /* Отображение изображения как блочного элемента */
+            margin: 20px auto; /* Центрирование изображения */
+        }
+
+        @keyframes imageFadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-size: 2.5em; margin: 0;" class="w">The Capybara Show WEB</h1>
+    <nav>
+        <a href="#about" class="w">О проекте</a>
+        <a href="#services" class="w">Сайтлист и сами сайты</a>
+        <a href="#contact" class="w">Создатель проекта</a>
+        <img src="photo_5440837817677772894_y.jpg">
+    </nav>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2 class="m">О проекте</h2>
+        <p class="m">Мы Привет! это проект 'The Capybara Show' от CapybaraABC.NET, это сборник веб-сайтов от CapybaraABC.NET, надемся что он вам понравится</p>
+        <img src="https://steamuserimages-a.akamaihd.net/ugc/2500152227281984065/DF04D501A247737416042F691EFF30DCF4072940/?imw=512&imh=512&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true">
+    </section>
+
+    <section id="services">
+        <h2 class="m">Сайтлист и сами сайты</h2>
+        <h3 class="m">Сайтлист</h3>
+        <p class="m">The Capybara Show WEB,
+CapybaraNET,
+Capybara City,
+CapybaraHackProg City,
+TGP (feat. 🍍🌍Ананасик космо🍍),
+CyberSiteWorld,
+TheWoldClick,
+Tamagochi-Capybara,
+CapybaraShop,
+CapybaraPassworld,
+AudioWorld,
+TheAnimals,
+The beautiful pomeranian,
+TacsNET,
+CorgiWeb,
+Newton_bot,
+CapybaraSmart,
+CapybaraTube,
+The Math,
+LoveProg (при уч. 🍍🌍Ананасик космо🍍, Nell1027, Незнакомец/Незнакомка).
+</p>
+<img src="https://i.pinimg.com/736x/af/23/fa/af23faeb9377e6abb4082b088f1b171e.jpg">
+<h3 class="m">Сайты</h3>
+<p class="m">CapybaraNET - https://capybaraabcnet.github.io/CapybaraNET---2.3/</p>
+<p class="m">Capybara City - https://capybaraabcnet.github.io/Capybara-City---1.2/</p>
+<p class="m">CapybaraHackProg City - </p>
+<p class="m">TGP (feat. 🍍🌍Ананасик космо🍍) - https://capybaraabcnet.github.io/TGP-ABC/</p>
+<p class="m">CyberSiteWorld - https://capybaraabcnet.github.io/CyberSiteWorld---1.2/</p>
+<p class="m">TheWoldClick - https://capybaraabcnet.github.io/TheWorldClick---1.1/</p>
+<p class="m">Tamagochi-Capybara - https://capybaraabcnet.github.io/Tamagochi-Capybara/</p>
+<p class="m">CapybaraShop - https://capybaraabcnet.github.io/CapybaraShop/</p>
+<p class="m">CapybaraPassworld - https://capybaraabcnet.github.io/CapybaraPassworld/</p>
+<p class="m">AudioWorld - https://capybaraabcnet.github.io/AudioWorld/</p>
+<p class="m">TheAnimals - https://capybaraabcnet.github.io/The-Animals/</p>
+<p class="m">The beautiful pomeranian - https://capybaraabcnet.github.io/The-beautiful-Pomeranian-1.5/</p>
+<p class="m">TacsNET - https://capybaraabcnet.github.io/TacsNET---1.3/</p>
+<p class="m">CorgiWeb - https://capybaraabcnet.github.io/WebCorgi-1.0/</p>
+<p class="m">Newton_bot - https://capybaraabcnet.github.io/Newton_bot/</p>
+<p class="m">CapybaraSmart - https://capybaraabcnet.github.io/CapybaraSmart/</p>
+<p class="m">CapybaraTube - https://github.com/CapybaraABCNet/CapybaraTube--</p>
+<p class="m">The Math - https://capybaraabcnet.github.io/TheMath/</p>
+<p class="m">LoveProg (при уч. 🍍🌍Ананасик космо🍍, Nell1027, Незнакомец/Незнакомка) - https://capybaraabcnet.github.io/LoveProg/</p>
+    </section>
+
+    <section id="contact">
+         <h1 class="m">CapybaraABC.NET</h1>
+    <p class="m">CapybaraABC.NET-программист и создатель сайта</p>
+    <a href="https://t.me/capybar11" class="m">CapybaraABC.NET-программист и создатель сайта, нажмите чтобы перейти в мой тг, у меня много проектов, если хотите их посмотреть то идите на CapybaraABCNet GitHub</a>
+    <div class="text-center">
+        <img src="https://static.mk.ru/upload/entities/2024/09/21/09/articles/facebookPicture/59/49/28/e6/1610a6b8a7cfb0cd0e45c59cb0bf9e26.jpg" >
+    </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 The Capybara Show WEB. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
